@@ -1,0 +1,5 @@
+<mat-slide-toggle   [checked]="themeService.darkMode | async" 
+                    (change)="themeService.toggleMode();" 
+                    (click)="$event.stopPropagation()">
+Dark theme
+</mat-slide-toggle>

@@ -1,0 +1,8 @@
+<main mat-app-background [class.dark-theme]="themeService.darkMode | async">
+    <app-counter></app-counter> <br>
+    <app-theme-switch></app-theme-switch>
+
+    <app-item-template></app-item-template>
+
+    <router-outlet></router-outlet>
+</main>

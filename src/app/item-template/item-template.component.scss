@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+
+.template-item-class {
+  // Adds a shadow for elevation level 2 with color #e91e63 and 80% of the default opacity
+  // The only problem is that IT DOES NOT WORK!
+  // @include mat-elevation(2, #1ecbe9, 0.8);
+
+
+  // Add a transition when the elevation changes
+  @include mat-elevation-transition;
+  @include mat-elevation(2);
+
+  // Set elevation when clicked 
+  &:active {
+    @include mat-elevation(8);
+  }
+}
